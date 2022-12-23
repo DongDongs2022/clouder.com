@@ -1,0 +1,140 @@
+/* 設定對話按鈕 */
+.chat-btn{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background: var(--littleblue);
+    color: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+}
+.chat-btn:hover, .submit:hover{
+    opacity: 1;
+}
+
+/* 設定對話視窗-預設隱藏 */
+.chat-popup{
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 150px;
+    height: 400px;
+    width: 300px;
+    background-color: var(--white);
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+/* 點擊後出現對話視窗 */
+.show{
+    display: flex;
+}
+
+/* 訊息數量 */
+.badge{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background: var(--greenblue);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 對話區域 */
+.chat-area{
+    height: 85%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.income-msg{
+    display: flex;
+    align-items: center;
+}
+
+/* 大頭貼 */
+.avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 客服人員對話 */
+.income-msg .msg{
+    background-color: var(--aliceblue);
+    color: var(--black);
+    padding: 10px;
+    border-radius: 25px;
+    margin-left: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+.input-area{
+    display: flex;
+    position: relative;
+}
+
+/* 輸入訊息區 */
+.input-area #chat-input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid var(--lightgrey);
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+/* emoji按鈕 */
+#emoji-btn{
+    position: absolute;
+    right: 50px;
+    top: 2px;
+    background: transparent;
+    font-size: 25px;
+}
+#emoji-btn:hover{
+    filter: drop-shadow(0 0 3px var(--black));
+}
+
+/* 送出對話按紐 */
+.submit{
+    padding: 4px 8px;
+    margin-left: 10px;
+    background: var(--littleblue);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+
+/* 已輸出之對話框 */
+.out-msg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* 已輸出之對話內容 */
+.my-msg{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 15px;
+    background: var(--littleblue);
+    color: var(--white);
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="擎雲數位科技,臨床教育,學習歷程整合平台,醫學教育,E-portfolio">
+    <meta name="description"
+        content="致力於服務醫學中心與大型教學醫院之用戶，為他們打造一個高穩定度且雲端化的全方位醫學學習歷程系統，並且運用巨量資料技術解決醫院教學與院務管理的許多問題。擎雲數位科技為這個特殊領域的先行者，而醫療產業是永遠不會消失的行業，代表我們在一個充滿前景且具有獨特利基的位置持續成長!!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+    <title>擎雲數位科技有限公司</title>
+
+    <!-- 網站小圖示 -->
+    <link rel="shortcut icon" href="images/icon.ico">
+    <!--for old browser-->
+    <link rel="icon" href="images/clouder-icon.png">
+
+    <!-- Google 線上圖標 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- 加入主畫面圖示 -->
+    <link rel="apple-touch-icon" href="images/clouder-icon-192.png">
+
+    <!-- 歸零css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 變數設定css -->
+    <link rel="stylesheet" href="css/basic.css">
+    <!-- 版面設定css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQ共用參數庫 for 輪播橫幅 & Gotop -->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+
+    <!-- Gotop JS宣告 -->
+    <script src="js/gotop.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1><span>擎雲數位科技有限公司</span><a href="index.html"></a></h1>
+            <!-- <a href="index.html"><img src="images/clouder-logo.jpg" alt="Clouder technology"></a> -->
+        </div>
+        <div id="nav">
+
+            <!-- 主選單 -->
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="showcase.html">成功案例</a></li>
+                    <li><a href="product.html">產品服務</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- 橫幅區塊 -->
+    <div id="banner"><img src="images/banner.jpg" alt="Clouder technology"></div>
+
+
+    <!-- 內容區塊 -->
+    <div class="content">
+        <div class="row">
+            <div class="column-pic">
+                <img src="images/EP.jpg" alt="Clouder technology">
+            </div>
+            <div class="column-text">
+                <h2>整合式醫學教育學習歷程系統</h2>
+                <p>提供完整醫學教育的線上學習環境，擁有多種評核方式可符合不同課程的需求，並可針對不同部門提供彈性的課程架構設定方式；可視化的歷程輸出，學員可輕鬆展現學習歷程。</p>
+                <button class="button"><a href="EP.html"><h6>了解更多</h6></a></button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row bg_aliceblue">
+            <div class="column-text">
+                <h2>高中職EP學習歷程檔案平台</h2>
+                <p>以電子化形式蒐集、紀錄學生在校的生活點滴，包括修課紀錄、社團活動、獎懲紀綠、專業證照、獲獎紀錄等，提供學生一個了解自己所具備的知識、技能、經驗及成就的工具。</p>
+                <button class="button btn-bg"><a href="E-learning.html"><h6>了解更多</h6></a></button>
+            </div>
+            <div class="column-pic">
+                <img src="images/high school.jpg" alt="Clouder technology">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="column-pic">
+                <img src="images/app.jpg" alt="Clouder technology">
+            </div>
+            <div class="column-text">
+                <h2>行動雲端服務平台</h2>
+                <p>針對行動雲端服務所開發的架構，目前已獲高雄市立空中大學採用為校園APP，並獲華人地區最大的酵素科技公司大漢生物科技公司採購為行動版的全球業務管考系統平台。</p>
+                <button class="button"><a href="E-library.html"><h6>了解更多</h6></a></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="font-size-14">Copyright &copy; 2013-2022 Clouder Technology Inc. All Rights Reserved.</div>
+    </footer>
+    <!-- Go to Top -->
+    <div id="gotop" onclick="topFunction()">
+        <span class="material-icons">arrow_circle_up</span>
+        <span class="gotip">Go Back To Top</span>
+    </div>
+    <!-- <script>
+        // 設定變數指定gotop
+        var myButton = document.getElementById("gotop");
+        
+        // 設定當畫面捲動到400時出現GoTop按鈕，否則就隱藏起來
+        window.onscroll = function () {scrollFunction() };
+
+        function scrollFunction() {
+            if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
+                myButton.style.display = "block";
+            } else{
+                myButton.style.display = "none";
+            }
+        }
+
+        // 設定按下按鈕時畫面移到頁面上方
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script> -->
+
+</body>
+
+</html>

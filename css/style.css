@@ -1,0 +1,433 @@
+/* --------------共用結構設定-------------- */
+/* --------頁首設定-------- */
+header {
+    height: 100px;
+    width: 1260px;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    float: left;
+    background-image: url(../images/clouder-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+    /* background-color: var(--grey); */
+    /* width: 250px;
+    height: 56px; */
+}
+
+#logo a {
+    display: block;
+    width: 280px;
+    height: 50px;
+
+}
+
+#logo span {
+    visibility: hidden;
+}
+
+/* #logo img{
+    width: 250px;
+    height: auto;
+} */
+
+/* --------選單設定-------- */
+/* 外層設定 */
+#nav {
+    width: 800px;
+    float: right;
+    margin-top: 15px;
+}
+
+/* 主選單 */
+#main-nav {
+    float: right;
+    font-size: var(--normal);
+}
+
+#main-nav a {
+    display: block;
+    color: var(--black);
+    font-weight: 700;
+    width: 100px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: 45px;
+}
+
+#main-nav a:hover,
+#main-nav a:active {
+    color: var(--greenblue);
+    text-decoration: none;
+    border-bottom: 2px solid var(--greenblue);
+}
+
+#main-nav li {
+    position: relative;
+    float: left;
+}
+
+/* --------內頁橫幅設定-------- */
+.hero-image {
+    height: 400px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--greenblue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/* --------內容框架設定-------- */
+#content {
+    padding: 120px;
+    display: flex;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    height: 600px;
+}
+
+.column-pic {
+    flex: 1.5;
+    padding: 100px 80px;
+}
+
+.column-pic img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.column-text {
+    flex: 2;
+    padding: 150px 120px 150px 100px;
+}
+
+.column-text p {
+    margin-top: 40px;
+}
+
+.button {
+    border: none;
+    color: var(--black);
+    padding: 10px 20px;
+    font-size: var(--h6);
+    cursor: pointer;
+    /*滑鼠指標*/
+    background-color: var(--yellow);
+    border-radius: 6px;
+    margin-top: 50px;
+}
+
+.btn-bg {
+    background-color: var(--littleblue);
+}
+
+.button a:hover,
+.button a:active {
+    color: var(--white);
+    text-decoration: none;
+}
+
+#main-content {
+    width: 1180px;
+    height: 100%;
+    overflow: hidden;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#main-content-big {
+    width: 1260px;
+    height: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#main-content-left {
+    width: 1260px;
+    height: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+
+/* --------頁尾設定-------- */
+footer {
+    width: 100%;
+    height: 80px;
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    background-color: var(--grey);
+    color: var(--black);
+}
+
+/* --------Go Top設定-------- */
+#gotop {
+    display: none; /*搭配行內Gotop JS 使用*/
+    text-align: center;
+    position: fixed;
+    bottom: 55px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#gotop .material-icons {
+    font-size: 60px !important;
+    color: var(--greenblue);
+    background-color: var(--white);
+    box-shadow: 0 0 8px 1px var(--aliceblue);
+    border-radius: 50%;
+}
+
+#gotop .gotip {
+    display: block;
+    width: 130px;
+    background-color: var(--greenblue);
+    color: var(--white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+}
+
+#gotop a {
+    text-decoration: none;
+}
+
+/* --------------各頁版面設定-------------- */
+/* --------首頁版面設定-------- */
+/* ------橫幅設定------ */
+#banner {
+    width: 100%;
+    height: 790px;
+    overflow: hidden;
+    background-image: linear-gradient(var(--aliceblue), var(--littleblue));
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* --------about內容設定-------- */
+.column-text-more {
+    flex: 2;
+    padding: 120px 120px 150px 100px;
+}
+
+.column-text-more p {
+    margin-top: 20px;
+}
+
+/* --------showcase版面設定-------- */
+/* ------內容區塊設定------ */
+.post {
+    width: 380px;
+    height: 330px;
+    margin: 0 20px;
+    box-shadow: 0 0 15px var(--aliceblue);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.post_img {
+    width: 380px;
+}
+
+.post_img img {
+    width: 380px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.post_title {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: var(--h4);
+    color: var(--black);
+    margin-top: 10px;
+}
+
+
+
+/* -----------EP內容設定----------- */
+/* ------內頁橫幅設定------*/
+.hero-text-left {
+    text-align: left;
+    letter-spacing: 2px;
+    color: var(--greenblue);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ------客戶實績設定------ */
+.pic_transform {
+    transform: scale(1, 1);
+    transition: transform 0.4s linear;
+}
+
+.pic_transform:hover {
+    transform: scale(1.2, 1.2);
+    opacity: 0.6;
+    /* box-shadow: 0 0 10px 5px var(--grey); */
+    z-index: 1000;
+    position: relative;
+}
+
+#mainpic {
+    width: 1180px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 120px 120px 120px;
+    /* border: 16px solid var(--white); */
+}
+
+#mainpic img {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    border: 20px solid var(--white);
+}
+
+
+#mainpic-small {
+    width: 1180px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 150px;
+}
+
+#mainpic-small img {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    border: 25px solid var(--white);
+}
+
+.item-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.item-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.item-3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.item-4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.item-5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.item-6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.item-7 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.item-8 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.item-9 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+/* --------product版面設定-------- */
+/* ------內容區塊設定------ */
+.post_big {
+    width: 380px;
+    height: 520px;
+    margin: 0 20px;
+    box-shadow: 0 0 15px var(--aliceblue);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.post_text{
+    /* width: 360px; */
+    height: 145px;
+    padding: 20px;
+    font-size: var(--normal);
+    font-weight: 700;
+    line-height: 30px;
+    text-align:justify;
+}
+.post-left {
+    width: 380px;
+    height: 330px;
+    margin: 0 20px;
+    box-shadow: 0 0 15px var(--aliceblue);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* --------contact內容設定-------- */
+#contact_text .material-icons {
+    transform: translate(-35%, 10%) !important;
+
+}
+
+#contact_text a {
+    color: var(--darkgrey, #979797ff);
+}
+
+#contact_text a:hover,
+#contact_text a:active {
+    color: var(--greenblue);
+    text-decoration: none;
+}
+
+/* -----下方文字與地圖設定----- */
+#contact_text {
+    width: 55%;
+    /* padding-right: 30px; */
+    box-sizing: border-box;
+}

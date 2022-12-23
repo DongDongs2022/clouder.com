@@ -1,0 +1,272 @@
+/* 基本變數宣告 */
+
+:root {
+    /* Color */
+    --white: #ffffffff;
+    --grey: #f2f2f2ff;
+    --darkgrey: #979797ff;
+    --lightgrey: #EBEBEBff;
+    --lemon: #fff1cbff;
+    --yellow: #f6c33bff;
+    --aliceblue: #e0f1ffff;
+    --littleblue: #62a1ffff;
+    --greenblue: #0163bfff;
+    --black: #000000ff;
+
+    /* 文字尺寸設定 */
+    --h1: 40px;
+    --h2: 36px;
+    --h3: 32px;
+    --h4: 24px;
+    --h5: 22px;
+    --h6: 20px;
+    --normal: 18px;
+    --small: 16px;
+    --mini: 14px;
+}
+
+/* 共用版面設定 */
+.full_layout {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.half_layout {
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.narrow_layout {
+    width: 1260px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.small_layout {
+    width: 1180px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.margin_auto {
+    margin: 0 auto;
+}
+
+.boxsizing_border {
+    box-sizing: border-box;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+/* 基本元素設定 */
+html,
+body {
+    font-family: 'Microsoft JhengHei', sans-serif;
+    color: var(--darkgrey, #979797ff);
+    height: 100%;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--greenblue);
+    text-decoration: underline;
+}
+
+/* 常用樣式設定 */
+.h1 {
+    font-size: var(--h1);
+    font-weight: 700;
+    line-height: 53px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: var(--h2);
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--black);
+}
+
+h3 {
+    font-size: var(--h3);
+    font-weight: 700;
+    line-height: 43px;
+}
+
+h4 {
+    font-size: var(--h4);
+    font-weight: 700;
+    line-height: 45px;
+}
+
+h5 {
+    font-size: var(--h5);
+    font-weight: 400;
+    line-height: 30px;
+}
+
+h6 {
+    font-size: var(--h6);
+    font-weight: 700;
+    line-height: 27px;
+}
+
+p {
+    font-size: var(--normal);
+    font-weight: 700;
+    line-height: 30px;
+}
+
+
+
+/* ------文字排版樣式------ */
+/* ----文字尺寸---- */
+.font-size-14 {
+    font-size: var(--mini) !important;
+}
+
+.font-size-16 {
+    font-size: var(--small) !important;
+}
+
+.font-size-18 {
+    font-size: var(--normal) !important;
+}
+
+.font-size-20 {
+    font-size: var(--h6) !important;
+}
+
+.font-size-22 {
+    font-size: var(--h5) !important;
+}
+
+.font-size-24 {
+    font-size: var(--h4) !important;
+}
+
+.font-size-32 {
+    font-size: var(--h3) !important;
+}
+
+.font-size-36 {
+    font-size: var(--h2) !important;
+}
+
+.font-size-40 {
+    font-size: var(--h1) !important;
+}
+
+/* ----文字間距---- */
+.padding_v10{
+    padding: 10px;
+}
+.padding_v20{
+    padding: 20px;
+}
+.padding_v30{
+    padding: 30px;
+}
+
+/* ----文字行高---- */
+.line-height_45{
+    line-height: 45px;
+}
+
+/* ----文字粗體---- */
+.font-weight_700 {
+    font-weight: 700;
+}
+
+.font-weight_400 {
+    font-weight: 400;
+}
+
+
+/* 文字色彩 */
+.color_black {
+    color: var(--black);
+}
+
+.color_darkgrey {
+    color: var(--darkgrey);
+}
+
+.color_greenblue {
+    color: var(--greenblue);
+}
+
+/* 段落對齊 */
+.text-align_left {
+    text-align: left;
+}
+
+.text-align_center {
+    text-align: center;
+}
+
+.text-align_right {
+    text-align: right;
+}
+
+.text-align_justify {
+    text-align: justify;
+}
+
+/* 框線設定 */
+.border_none{
+    border: none;
+}
+
+/*-----作用文字-----*/
+.highlight_text{
+    border-bottom: 2px solid var(--greenblue);
+    font-weight: 700 !important;
+    color: var(--greenblue) !important;
+}
+
+/*-------區塊樣式設定-------*/
+/*-----背景顏色設定-----*/
+.bg_aliceblue {
+    background-color: var(--aliceblue);
+}
+
+.bg_littleblue {
+    background-color: var(--littleblue);
+}
+
+.bg_lemon {
+    background-color: var(--lemon);
+}
+
+.bg_yellow {
+    background-color: var(--yellow);
+}
+
+.bg_lightgrey {
+    background-color: rgba(235, 235, 235, 0.25);
+}
+
+.bg_grey {
+    background-color: var(--grey);
+}
+
+/*-----滑鼠指標設定-----*/
+.cursor_pointer{
+    cursor: pointer;
+}
+
+/*-----邊框設定-----*/
+.border-none{
+    border: none;
+}
