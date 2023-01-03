@@ -1,0 +1,363 @@
+/* --------------共用結構設定-------------- */
+/* --------頁首頁尾設定-------- */
+header {
+    width: calc(100% - 20px);
+    padding: 20px 10px;
+    height: 80px;
+}
+
+footer {
+    height: 100px;
+    line-height: 70px;
+}
+
+footer .copyright {
+    word-wrap: break-word;
+    line-height: 0.2;
+}
+
+#logo a {
+    width: 220px;
+    height: 40px;
+}
+
+/* --------選單設定-------- */
+#nav {
+    width: 50%;
+    margin-top: 5px;
+}
+
+/* 主選單 */
+#main-nav {
+    float: none;
+    position: fixed;
+    top: 40px;
+    right: 25px;
+    z-index: 9999;
+}
+
+#main-nav:active .tip {
+    visibility: visible;
+}
+
+#main-nav a {
+    width: 100%;
+    margin-left: 0;
+    color: var(--greenblue);
+    background-color: var(--empty);
+}
+
+/* 滑鼠滑入作用按鈕變色 */
+#main-nav a:hover,
+#main-nav a:active {
+    color: var(--black);
+    border-bottom: none;
+}
+
+#main-nav li {
+    float: none;
+}
+
+/*-----作用文字-----*/
+.highlight_text {
+    border-bottom: none;
+    color: var(--darkgrey) !important;
+    background-color: rgba(155, 146, 245, 0.3) !important;
+}
+
+.menu>div>div>ul>li>a {
+    transition: all .4s ease;
+}
+
+/* 漢堡選單設定 */
+.toggler {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    padding: 12px;
+    background-color: var(--greenblue);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---漢堡選單線條---*/
+.hamburger>div {
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+    position: relative;
+}
+
+.hamburger>div::before,
+/*---上線---*/
+.hamburger>div::after {
+    /*---下線---*/
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 2px;
+    background-color: inherit;
+}
+
+.hamburger>div::before {
+    top: -10px;
+}
+
+.hamburger>div::after {
+    top: 10px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 選單外層範圍 */
+.menu>div {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 300vw;
+    height: 300vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all .4s ease;
+}
+
+/* 選單透明底色範圍 */
+.menu>div>div {
+    text-align: center;
+    width: 100vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+/*---開啟選單後圖示---*/
+.toggler:checked+.hamburger>div {
+    transform: rotate(135deg);
+}
+
+.toggler:checked+.hamburger>div::before,
+.toggler:checked+.hamburger>div::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/*---開啟選單後經過漢堡選單圖示---*/
+.toggler:checked+.hamburger>div {
+    transform: rotate(225deg);
+}
+
+/*---開啟選單後秀出原選單---*/
+.toggler:checked~.menu {
+    visibility: visible;
+}
+
+.toggler:checked~.menu>div {
+    transform: scale(1);
+    transition-duration: 0.75s;
+}
+
+.toggler:checked~.menu>div>div {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
+/* ------------各頁版面設定------------ */
+/* --------首頁版面設定-------- */
+#content {
+    width: calc(100%-20px);
+    padding: 10px;
+}
+
+.row {
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.column-pic {
+    flex: 2;
+    padding: 30px 75px 10px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.column-pic img {
+    height: 300px;
+    width: 350px;
+}
+
+.column-text {
+    padding: 20px 30px 30px;
+    flex-wrap: wrap;
+}
+
+.column-text h2 {
+    font-size: var(--h3);
+}
+
+.column-text p {
+    margin-top: 20px;
+}
+
+.button {
+    margin-top: 30px;
+}
+
+/* --------About設定-------- */
+.row-big {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.column-text-more {
+    flex: 3;
+    padding: 20px 30px 30px;
+    flex-wrap: wrap;
+}
+
+.column-text-more h2 {
+    font-size: var(--h3);
+}
+
+.column-text-more p {
+    margin-top: 5px;
+}
+
+/* --------showcase設定-------- */
+#main-content-big {
+    width: calc(100%-20px);
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+
+.post {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.post_img {
+    width: 60%;
+}
+
+.post_img img {
+    width: 60%;
+
+}
+
+.post_title {
+    width: 30%;
+    margin: 10px;
+    font-size: var(--h5);
+}
+
+/* --------product設定-------- */
+#main-content {
+    width: calc(100%-20px);
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.post_big {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.post_big .post_title {
+    height: 50%;
+    margin: 10px;
+    font-size: var(--h6);
+}
+
+.post_text {
+    width: 30%;
+    height: auto;
+}
+
+#main-content-left {
+    width: calc(100%-20px);
+    padding: 0;
+}
+
+/* --------EP設定-------- */
+.hero-text-left {
+    text-align: center;
+    left: 50%;
+}
+
+.hero-text-left .h1 {
+    margin: 0 auto;
+}
+
+.hero-text-left p {
+    line-height: 50px;
+}
+
+#mainpic {
+    width: 100%;
+    height: auto;
+    /* grid-template-rows: 40% 40% 40% 40% ; */
+    grid-template-columns: 50% 50%;
+}
+
+#mainpic-small{
+    width: 100%;
+    height: auto;
+    grid-template-columns:50% 50%;
+    grid-template-rows:100%;
+}
+
+.padding_v30 {
+    padding: 20px 10px;
+}
+
+/* --------contact設定-------- */
+#contact_text {
+    width: 40%;
+    margin: 0;
+
+}
+
+#contact_text h4 {
+    width: 80%;
+    font-size: var(--h5);
+}
+

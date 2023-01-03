@@ -1,0 +1,138 @@
+/* --------------共用結構設定-------------- */
+/* --------頁首頁尾設定-------- */
+header{
+    width: 780px;
+    padding: 20px 10px;
+}
+/* footer{
+    width: 960px;
+    padding: 0;
+} */
+
+#logo a {
+    width: 250px;
+    height: 45px;
+}
+
+/* --------選單設定-------- */
+#nav {
+    width: 500px;
+}
+#main-nav a {
+    margin-left:10px;
+}
+
+/* --------版面主結構設定-------- */
+/* --------首頁設定-------- */
+#content{
+    padding: 90px;
+}
+.column-pic{
+    flex: 2;
+    padding: 60px 40px;
+}
+.column-pic img {
+    height: 300px;
+    width: 350px;
+}
+.column-text {
+    padding: 60px 30px;
+}
+.column-text h2{
+    font-size: var(--h3);
+}
+.column-text p {
+    margin-top: 20px;
+}
+.button{
+    margin-top: 30px;
+}
+
+/* --------About設定-------- */
+.row-big {
+    display: flex;
+    height: 800px;
+}
+.column-text-more {
+    flex: 3;
+    padding: 50px 20px;
+}
+.column-text-more h2{
+    font-size: var(--h3);
+}
+.column-text-more p {
+    margin-top: 5px;
+}
+
+/* --------showcase設定-------- */
+#main-content-big {
+    width: 768px;
+    padding: 10px 0;
+    flex-wrap:wrap;
+}
+.post {
+    width: 440px;
+    height: 350px;
+    margin: 20px auto;
+}
+.post_img {
+    width: 440px;
+}
+.post_img img {
+    width: 440px;
+
+}
+.post_title {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+/* --------product設定-------- */
+#main-content {
+    width: 768px;
+    padding: 20px 0;
+    flex-wrap:wrap;
+}
+.post_big {
+    width: 440px;
+    height: 520px;
+    margin: 20px auto;
+}
+.post_big .post_title{
+    height: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+#main-content-left {
+    width: 768px;
+    padding: 0;
+}
+/* --------EP設定-------- */
+.hero-text-left{
+    text-align: center;
+    left: 50%;
+}
+.hero-text-left .h1{
+    margin: 0 auto;
+}
+.hero-text-left p{
+   line-height: 50px; 
+}
+
+#mainpic {
+    width: 768px;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+}
+.padding_v30{
+    padding: 20px 10px;
+}
+/* --------contact設定-------- */
+#contact_text {
+    width: 75%;
+    /* padding-right: 30px; */
+    box-sizing: border-box;
+}
+#map{
+    margin: 30px;
+}
