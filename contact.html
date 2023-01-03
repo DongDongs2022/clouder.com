@@ -20,13 +20,19 @@
     <!-- 加入主畫面圖示 -->
     <link rel="apple-touch-icon" href="images/clouder-icon-192.png">
 
-    <!-- 歸零css -->
-    <link rel="stylesheet" href="css/reset.css">
-    <!-- 變數設定css -->
-    <link rel="stylesheet" href="css/basic.css">
-    <!-- 版面設定css -->
-    <link rel="stylesheet" href="css/style.css">
+     <!-- 歸零css -->
+     <link rel="stylesheet" href="css/reset.css" type="text/css">
 
+     <!-- 變數設定css -->
+     <link rel="stylesheet" href="css/basic.css" type="text/css">
+ 
+     <!-- 版面設定css -->
+     <link rel="stylesheet" href="css/style.css" type="text/css">
+ 
+     <!-- 媒體查詢css -->
+     <link rel="stylesheet" href="css/style_m.css" media="(min-width: 768px) and (max-width: 1024px)">
+     <link rel="stylesheet" href="css/style_s.css" media="(max-width: 767px)">
+ 
     <!-- JQ共用參數庫 for 輪播橫幅 & Gotop -->
     <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
 
@@ -45,14 +51,28 @@
             <!-- <a href="index.html"><img src="images/clouder-logo.jpg" alt="Clouder technology"></a> -->
         </div>
         <div id="nav">
-            <!-- 主選單 -->
+            
             <nav id="main-nav">
-                <ul>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="showcase.html">成功案例</a></li>
-                    <li><a href="product.html">產品服務</a></li>
-                    <li><a href="contact.html" class="highlight_text">聯絡我們</a></li>
-                </ul>
+                <!-- 漢堡選單 -->
+                <span class="tip">Click to open Navigation.</span><!-- 漢堡選單提示 -->
+                <input type="checkbox" class="toggler"><!-- 漢堡選單啟動 -->
+                <div class="hamburger"><!-- 漢堡選單圖示 -->
+                    <div></div><!-- 漢堡選單線條 -->
+                </div>
+
+                <div class="menu">
+                    <div><!-- 選單外層 -->
+                        <div><!-- 選單底色 -->
+                            <!-- 主選單 -->
+                            <ul>
+                                <li><a href="about.html">關於我們</a></li>
+                                <li><a href="showcase.html">成功案例</a></li>
+                                <li><a href="product.html">產品服務</a></li>
+                                <li><a href="contact.html">聯絡我們</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -86,7 +106,8 @@
         </div>
     </div>
     <footer>
-        <div class="font-size-14">Copyright &copy; 2013-2022 Clouder Technology Inc. All Rights Reserved.</div>
+        <div class="font-size-14">Copyright &copy; 2013-2022 Clouder Technology Inc.</div>
+        <div class="font-size-14 copyright">All Rights Reserved.</div>
     </footer>
     <!-- Go to Top -->
     <!-- <div id="gotop" onclick="topFunction()">

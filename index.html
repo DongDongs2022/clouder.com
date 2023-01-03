@@ -21,11 +21,17 @@
     <link rel="apple-touch-icon" href="images/clouder-icon-192.png">
 
     <!-- 歸零css -->
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+
     <!-- 變數設定css -->
-    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/basic.css" type="text/css">
+
     <!-- 版面設定css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- 媒體查詢css -->
+    <link rel="stylesheet" href="css/style_m.css" media="(min-width: 768px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/style_s.css" media="(max-width: 767px)">
 
     <!-- JQ共用參數庫 for 輪播橫幅 & Gotop -->
     <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
@@ -42,19 +48,37 @@
         </div>
         <div id="nav">
 
-            <!-- 主選單 -->
             <nav id="main-nav">
-                <ul>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="showcase.html">成功案例</a></li>
-                    <li><a href="product.html">產品服務</a></li>
-                    <li><a href="contact.html">聯絡我們</a></li>
-                </ul>
+                <!-- 漢堡選單 -->
+                <span class="tip">Click to open Navigation.</span><!-- 漢堡選單提示 -->
+                <input type="checkbox" class="toggler"><!-- 漢堡選單啟動 -->
+                <div class="hamburger"><!-- 漢堡選單圖示 -->
+                    <div></div><!-- 漢堡選單線條 -->
+                </div>
+
+                <div class="menu">
+                    <div><!-- 選單外層 -->
+                        <div><!-- 選單底色 -->
+                            <!-- 主選單 -->
+                            <ul>
+                                <li><a href="about.html">關於我們</a></li>
+                                <li><a href="showcase.html">成功案例</a></li>
+                                <li><a href="product.html">產品服務</a></li>
+                                <li><a href="contact.html">聯絡我們</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
     <!-- 橫幅區塊 -->
     <div id="banner"><img src="images/banner.jpg" alt="Clouder technology"></div>
+    <!-- <picture>
+        <source media="(min-width: 768px) and (max-width: 959px)" srcset="images">
+        <source media="(max-width: 767px)" srcset="images">
+        <img src="images/banner.jpg" alt="Clouder technology">
+    </picture> -->
 
 
     <!-- 內容區塊 -->
@@ -66,7 +90,9 @@
             <div class="column-text">
                 <h2>整合式醫學教育學習歷程系統</h2>
                 <p>提供完整醫學教育的線上學習環境，擁有多種評核方式可符合不同課程的需求，並可針對不同部門提供彈性的課程架構設定方式；可視化的歷程輸出，學員可輕鬆展現學習歷程。</p>
-                <button class="button"><a href="EP.html"><h6>了解更多</h6></a></button>
+                <button class="button"><a href="EP.html">
+                        <h6>了解更多</h6>
+                    </a></button>
             </div>
         </div>
     </div>
@@ -75,7 +101,9 @@
             <div class="column-text">
                 <h2>高中職EP學習歷程檔案平台</h2>
                 <p>以電子化形式蒐集、紀錄學生在校的生活點滴，包括修課紀錄、社團活動、獎懲紀綠、專業證照、獲獎紀錄等，提供學生一個了解自己所具備的知識、技能、經驗及成就的工具。</p>
-                <button class="button btn-bg"><a href="E-learning.html"><h6>了解更多</h6></a></button>
+                <button class="button btn-bg"><a href="E-learning.html">
+                        <h6>了解更多</h6>
+                    </a></button>
             </div>
             <div class="column-pic">
                 <img src="images/high school.jpg" alt="Clouder technology">
@@ -90,12 +118,15 @@
             <div class="column-text">
                 <h2>行動雲端服務平台</h2>
                 <p>針對行動雲端服務所開發的架構，目前已獲高雄市立空中大學採用為校園APP，並獲華人地區最大的酵素科技公司大漢生物科技公司採購為行動版的全球業務管考系統平台。</p>
-                <button class="button"><a href="E-library.html"><h6>了解更多</h6></a></button>
+                <button class="button"><a href="E-library.html">
+                        <h6>了解更多</h6>
+                    </a></button>
             </div>
         </div>
     </div>
     <footer>
-        <div class="font-size-14">Copyright &copy; 2013-2022 Clouder Technology Inc. All Rights Reserved.</div>
+        <div class="font-size-14">Copyright &copy; 2013-2022 Clouder Technology Inc.</div>
+        <div class="font-size-14 copyright">All Rights Reserved.</div>
     </footer>
     <!-- Go to Top -->
     <div id="gotop" onclick="topFunction()">
